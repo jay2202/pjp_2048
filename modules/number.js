@@ -18,10 +18,13 @@ const number = {
         }
 
         const numberElement = document.createElement("div");
-        const numberValue = 2;
+        let newNumberValue = Math.pow(2, (Math.floor(Math.random() * 2) + 1));
+        if (newNumberValue == 2)numberElement.style.backgroundColor = '#eee4da'
+      else if(newNumberValue  == 4)numberElement.style.backgroundColor = '#ede0c8' 
+        
 
-        numberElement.innerText = numberValue;
-        numberElement.dataset.value = numberValue;
+        numberElement.innerText = newNumberValue;
+        numberElement.dataset.value = newNumberValue;
         numberElement.classList.add("number");
 
         numberElement.style.top = `${grid.cells[emptyCellIndex].top}px`;

@@ -15,7 +15,7 @@ const grid = {
         const cellElements = document.getElementsByClassName("cell");
         let cellIndex = 1;
         for(let cellElement of cellElements) {
-            grid.cells[cellIndex] = {
+            this.cells[cellIndex] = {
                 element: cellElement,
                 top: cellElement.offsetTop,
                 left: cellElement.offsetLeft,
