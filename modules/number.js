@@ -66,7 +66,19 @@ const number = {
                 }
             toCell.number.dataset.value = newNumberValue;
             toCell.number.innerText = newNumberValue;
-
+            if (newNumberValue == 0) toCell.number.style.backgroundColor = '#afa192'
+      else if (newNumberValue == 2)  toCell.number.style.backgroundColor = '#eee4da'
+      else if (newNumberValue  == 4) toCell.number.style.backgroundColor = '#ede0c8' 
+      else if (newNumberValue  == 8) toCell.number.style.backgroundColor = '#f2b179' 
+      else if (newNumberValue  == 16)toCell.number.style.backgroundColor = '#ffcea4' 
+      else if (newNumberValue  == 32)toCell.number.style.backgroundColor = '#e8c064' 
+      else if (newNumberValue == 64) toCell.number.style.backgroundColor = '#ffab6e' 
+      else if (newNumberValue == 128)toCell.number.style.backgroundColor = '#fd9982' 
+      else if (newNumberValue == 256)toCell.number.style.backgroundColor = '#ead79c' 
+      else if (newNumberValue == 512)toCell.number.style.backgroundColor = '#76daff' 
+      else if(newNumberValue == 1024)toCell.number.style.backgroundColor = '#beeaa5' 
+      else if(newNumberValue == 2048)toCell.number.style.backgroundColor = '#d7d4f0'
+      else if(newNumberValue == 4096)toCell.number.style.backgroundColor = '#000033'
             fromCell.number = null;
         }
     }
